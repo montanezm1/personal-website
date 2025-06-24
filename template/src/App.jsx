@@ -1,12 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import Home from './components/Home'
+import About from './components/About'
+import Project from './components/Project'
+import Contact from './components/Contact'
 import './styles/index.css'
 
 function App() {
+  let Comp
+switch(window.location.pathname) {
+  case "/": {
+    Comp = Home;
+    break;
+  }
+  case "/about": {
+    Comp = About;
+    break;
+  }
+  case "/project": {
+    Comp = Project;
+    break;
+  }
+  case "/contact": {
+    Comp = Contact;
+    break;
+  }
+  
+}
+ 
+
   return (
-    <div className="h-screen w-screen bg-gray-100 flex items-center justify-center">
-      <h1 className="text-4xl font-bold">Portfolio Project</h1>
+    <div>
+      <Navbar></Navbar>
+      <Comp></Comp>
+      <Footer></Footer>
     </div>
   );
 }
