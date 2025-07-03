@@ -1,100 +1,10 @@
 @import "tailwindcss";
 
 /* All of this is temporary and can be removed when doing tailwind
+
+Update: Removed by Arshiya
  */
- 
-.footer{
-    background-color: #D7B2B2;
-    height: 200 px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    z-index: 1;
-    font-size: 1.2rem;
-}
 
-.footer_container{
-    display: flex;
-    margin: 0 auto;
-    padding: 0 50px;
-    height: 150px;
-    width: 100%;
-    max-width: 1300px;
-    align-items: center;
-}
-
-.footer_logo{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.footer_menu{
-    display: flex;
-    align-items: center;
-}
-
-.footer_items{
-    height: 80px;
-}
-
-.footer_links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 100%;
-    font-size: 30px;
-    padding-right: 30%;
-}
-h1{
-    display:flex;
-    font-size: 30px;
-}
-
-.navbar{
-    background-color: #D7B2B2;
-    height: 200 px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    z-index: 1;
-    font-size: 1.2rem;
-}
-
-.navbar_container{
-    display: flex;
-    margin: 0 auto;
-    padding: 0 50px;
-    height: 80px;
-    width: 100%;
-    max-width: 1300px;
-}
-
-.navbar_logo{
-    font-size: 50px;
-
-}
-
-.navbar_menu{
-    display: flex;
-    align-items: center;
-}
-
-.navbar_item{
-    height: 80px;
-}
-
-.navbar_links{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 180px;
-    height: 100%;
-    font-size: 30px;
-    padding-right: 30%;
+body {
+    font-family: 'Inter', sans-serif;
 }
