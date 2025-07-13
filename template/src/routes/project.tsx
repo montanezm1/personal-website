@@ -4,7 +4,7 @@ export const Route = createFileRoute('/project')({
   component: ProjectsPage,
 })
 
-function ProjectsPage() {
+function ProjectsPage() { 
   const projects = [
     {id: 1, title: 'Project1', description: 'description1', image:'/codeLogo.png', link: 'https://www.instagram.com/umasscodecollab/'},
     {id: 2, title: 'Project2', description: 'description2', image:'/codeLogo.png', link: 'https://www.instagram.com/umasscodecollab/'},
