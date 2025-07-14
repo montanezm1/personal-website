@@ -10,13 +10,20 @@ function RootComponent() {
     <div className="flex flex-col min-h-screen bg-[#f5f1f1] text-[#2d2d2d]">
       {/* Navbar */}
       <header className="flex justify-between items-center px-12 py-8 bg-[#b68d94] shadow-md sticky top-0 z-50">
-        <Link to="/" className="text-5xl font-extrabold hover:opacity-80 tracking-tight">
+        <a href="#home" className="text-5xl font-extrabold hover:opacity-80 tracking-tight">
           CodeCollab
-        </Link>
+        </a>
         <nav className="flex gap-x-12 text-xl font-bold">
-          <Link to="/about" className="hover:text-[#a3747e] transition">About</Link>
-          <Link to="/project" className="hover:text-[#a3747e] transition">Projects</Link>
-          <Link to="/contact" className="hover:text-[#a3747e] transition">Contact</Link>
+          <a href="#about" className="hover:text-[#a3747e] transition">About</a>
+          <a href="#projects" className="hover:text-[#a3747e] transition">Projects</a>
+          <a
+            href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#a3747e] transition"
+          >
+            Resume
+          </a>
         </nav>
       </header>
 

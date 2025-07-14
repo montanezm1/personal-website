@@ -1,13 +1,9 @@
-import { createFileRoute } from "@tanstack/react-router";
+// src/routes/about.tsx
 
-export const Route = createFileRoute("/about")({
-  component: RouteComponentAboutPage,
-});
-
-function RouteComponentAboutPage() {
+export default function AboutSection() {
   return (
-    <section className="bg-[#f5f1f1] text-[black] min-h-screen px-6 py-16">
-      <h2 className="text-5xl font-semibold italic text-center mb-12">About Me</h2>
+    <section id="about" className="bg-white text-[black] min-h-screen px-6 py-16">
+      <h2 className="text-5xl font-semibold text-center mb-12">About Me</h2>
       <div className="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto">
         {/* Bio box */}
         <div className="bg-[#f5f1f1] p-6 md:p-8 rounded-xl border border-[#000000] max-w-xl text-left font-mono text-sm shadow-md">
@@ -30,7 +26,7 @@ function RouteComponentAboutPage() {
       </div>
 
       {/* Skills Section */}
-      <h3 className="text-5xl font-semibold italic text-center mb-12 mt-20">Skills</h3>
+      <h3 className="text-5xl font-semibold text-center mb-12 mt-20">Skills</h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 text-[#000000] font-mono text-sm">
         {/* Languages */}
         <div>
@@ -74,7 +70,7 @@ function RouteComponentAboutPage() {
         <div className="bg-[#f5f1f1] p-6 rounded-xl border border-[#000000] shadow-md">
           <div className="text-xl mb-2">I really enjoy...</div>
           <p className="font-mono text-sm">
-            Hiking is one of the best ways to...
+            Hiking! It's one of the best ways to...
           </p>
         </div>
 
