@@ -2,6 +2,7 @@ import { createFileRoute } from '@tanstack/react-router'
 import { Typewriter } from 'react-simple-typewriter'
 import AboutSection from '../routes/about'
 import ProjectsSection from '../routes/project'
+import ExperienceSection from '../routes/experience'
 
 export const Route = createFileRoute('/')({
   component: RouteComponentMainPage,
@@ -46,6 +47,9 @@ function RouteComponentMainPage() {
 
       {/* About Section */}
       <AboutSection />
+      
+      {/* Experience Section */}
+      <ExperienceSection />
 
       {/* Projects Section */}
       <ProjectsSection />

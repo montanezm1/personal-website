@@ -15,6 +15,7 @@ function RootComponent() {
         </a>
         <nav className="flex gap-x-12 text-xl font-bold">
           <a href="#about" className="hover:text-[#a3747e] transition">About</a>
+          <a href="#experience" className="hover:text-[#a3747e] transition">Experience</a>
           <a href="#projects" className="hover:text-[#a3747e] transition">Projects</a>
           <a
             href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs.pdf"
