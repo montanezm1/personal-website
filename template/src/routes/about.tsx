@@ -27,41 +27,33 @@ export default function AboutSection() {
 
       {/* Skills Section */}
       <h3 className="text-5xl font-semibold text-center mb-12 mt-20">Skills</h3>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-6 text-[#000000] font-mono text-sm">
-        {/* Languages */}
-        <div>
-          <h4 className="text-2xl font-semibold mb-4 text-center">Languages</h4>
-          <ul className="space-y-1 text-center">
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>HTML & CSS</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-
-        {/* Frameworks */}
-        <div>
-          <h4 className="text-2xl font-semibold mb-4 text-center">Frameworks</h4>
-          <ul className="space-y-1 text-center">
-            <li>React</li>
-            <li>Tailwind CSS</li>
-            <li>Flask</li>
-            <li>Node</li>
-            <li>Express</li>
-          </ul>
-        </div>
-
-        {/* Tools */}
-        <div>
-          <h4 className="text-2xl font-semibold mb-4 text-center">Tools</h4>
-          <ul className="space-y-1 text-center">
-            <li>Git & GitHub</li>
-            <li>Figma</li>
-            <li>Postman</li>
-          </ul>
-        </div>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-6xl mx-auto px-6">
+        {[
+          { name: "JavaScript", logo: "/icons/js.svg" },
+          { name: "Python", logo: "/icons/py.svg" },
+          { name: "HTML", logo: "/icons/html.svg" },
+          { name: "CSS", logo: "/icons/css.svg" },
+          { name: "SQL", logo: "/icons/sql.svg" },
+          { name: "React", logo: "/icons/react.svg" },
+          { name: "Django", logo: "/icons/dj.svg" },
+          { name: "Node.js", logo: "/icons/nodejs.svg" },
+          { name: "Express", logo: "/icons/express.svg" },
+          { name: "Git & GitHub", logo: "/icons/git.svg" },
+          { name: "Figma", logo: "/icons/figma.svg" },
+          { name: "Java", logo: "/icons/java.svg" }
+        ].map((skill, index) => (
+          <div
+            key={index}
+            className="group bg-[#f5f1f1] hover:bg-[#f7c5d3] transition-colors duration-300 p-4 rounded-xl border border-[#000000] shadow-md flex flex-col items-center text-center"
+          >
+            <img
+              src={skill.logo}
+              alt={skill.name}
+              className="w-12 h-12 mb-3 transition-transform duration-300 group-hover:scale-110"
+            />
+            <span className="font-mono text-sm">{skill.name}</span>
+          </div>
+        ))}
       </div>
 
       {/* Fun Facts */}
@@ -77,7 +69,8 @@ export default function AboutSection() {
         <div className="bg-[#f5f1f1] p-6 rounded-xl border border-[#000000] shadow-md">
           <div className="text-xl mb-2">In my free time...</div>
           <p className="font-mono text-sm">
-            I like to...</p>
+            I like to...
+          </p>
         </div>
 
         <div className="bg-[#f5f1f1] p-6 rounded-xl border border-[#000000] shadow-md">
