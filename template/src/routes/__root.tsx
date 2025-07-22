@@ -7,7 +7,7 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#f5f1f1] text-[#2d2d2d]">
+    <div className="flex flex-col min-h-screen bg-[#fdf6f6] text-[#2d2d2d]">
       {/* Navbar */}
       <header className="flex justify-between items-center px-12 py-8 bg-[#b68d94] shadow-md sticky top-0 z-50">
         <a href="#home" className="text-5xl font-extrabold hover:opacity-80 tracking-tight">
