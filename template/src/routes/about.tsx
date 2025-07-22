@@ -5,8 +5,8 @@ export default function AboutSection() {
     <section id="about" className="bg-white text-[black] min-h-screen px-6 py-16">
       <h2 className="text-5xl font-semibold text-center mb-12">About Me</h2>
       <div className="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto">
-        {/* Bio box */}
-        <div className="bg-[#f5f1f1] p-6 md:p-8 rounded-xl border border-[#000000] max-w-xl text-left font-mono text-sm shadow-md">
+        {/* Bio box - padding to left*/}
+        <div className="bg-[#f5f1f1] p-6 md:p-8 rounded-xl border border-[#000000] max-w-xl text-left font-mono text-sm shadow-md ml-18">
           <p>
             I am Firstname Lastname, a student at (University).
             I am originally from (Hometown). Growing up there inspired me to pursue
