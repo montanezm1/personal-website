@@ -8,16 +8,24 @@ export const Route = createRootRoute({
 function RootComponent() {
   return (
     <div className="flex flex-col min-h-screen bg-[transparent] text-[#2d2d2d]">
-
       {/* Navbar */}
       <header className="flex justify-between items-center px-12 py-8 bg-[#b68d94] shadow-md sticky top-0 z-50">
-        <a href="#home" className="text-5xl font-extrabold hover:opacity-80 tracking-tight">
+        <a
+          href="#home"
+          className="text-5xl font-extrabold hover:opacity-80 tracking-tight"
+        >
           CodeCollab
         </a>
         <nav className="flex gap-x-12 text-xl font-bold">
-          <a href="#about" className="hover:text-[#a3747e] transition">About</a>
-          <a href="#experience" className="hover:text-[#a3747e] transition">Experience</a>
-          <a href="#projects" className="hover:text-[#a3747e] transition">Projects</a>
+          <a href="#about" className="hover:text-[#a3747e] transition">
+            About
+          </a>
+          <a href="#experience" className="hover:text-[#a3747e] transition">
+            Experience
+          </a>
+          <a href="#projects" className="hover:text-[#a3747e] transition">
+            Projects
+          </a>
           <a
             href="https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs.pdf"
             target="_blank"
@@ -44,7 +52,9 @@ function RootComponent() {
               alt="CodeCollab Logo"
               className="w-20 h-20 rounded-full object-cover shadow-md hover:scale-105 transition-transform duration-300"
             />
-            <p className="font-semibold text-xl hidden sm:block">UMass CodeCollab</p>
+            <p className="font-semibold text-xl hidden sm:block">
+              UMass CodeCollab
+            </p>
           </div>
 
           {/* Right: Socials */}
@@ -57,7 +67,11 @@ function RootComponent() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-[#a3747e] transition duration-200"
               >
-                <img src="/icons/instagram.svg" alt="Instagram" className="w-7 h-7" />
+                <img
+                  src="/icons/instagram.svg"
+                  alt="Instagram"
+                  className="w-7 h-7"
+                />
                 <span>Instagram</span>
               </a>
               <a
@@ -75,16 +89,21 @@ function RootComponent() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-[#a3747e] transition duration-200"
               >
-                <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-7 h-7" />
+                <img
+                  src="/icons/linkedin.svg"
+                  alt="LinkedIn"
+                  className="w-7 h-7"
+                />
                 <span>LinkedIn</span>
               </a>
             </div>
           </div>
         </div>
 
-        <p className="text-xs mt-4 text-center opacity-70">&copy; 2025 UMass CodeCollab</p>
+        <p className="text-xs mt-4 text-center opacity-70">
+          &copy; 2025 UMass CodeCollab
+        </p>
       </footer>
-
     </div>
   );
 }
