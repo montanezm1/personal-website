@@ -5,7 +5,7 @@ export default function ExperienceSection() {
       id="experience"
       className="bg-[white] max-h-100vh py-16 mb-12 px-4 sm:px-6 lg:px-8"
     >
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mx-auto mb-12 text-black">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mx-auto mb-12 text-[#2d2d2d]">
         My Experience
       </h2>
       <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto">
@@ -20,13 +20,8 @@ export default function ExperienceSection() {
           }}
         >
           <motion.div
-            className="bg-[white] p-6 rounded-md border border-[#000000] shadow-md"
-            whileHover={{ scale: 1.03 }}
-            transition={{
-              type: "spring",
-              stiffness: 500,
-              damping: 10,
-            }}
+            className="bg-[white] p-6 rounded-md border border-[#000000] shadow-md "
+            whileHover={{ scale: 1.05 }}
           >
             <div className="flex justify-between items-center mb-4 text-black">
               <p className="text-2xl font-bold">SWE Intern @ Company</p>
@@ -60,12 +55,7 @@ export default function ExperienceSection() {
         >
           <motion.div
             className="bg-[white] p-6 rounded-md border border-[#000000] shadow-md"
-            whileHover={{ scale: 1.03 }}
-            transition={{
-              type: "spring",
-              stiffness: 500,
-              damping: 10,
-            }}
+            whileHover={{ scale: 1.05 }}
           >
             <div className="flex justify-between items-center mb-4 text-black">
               <p className="text-2xl font-bold">SWE Intern @ Company</p>
@@ -100,12 +90,7 @@ export default function ExperienceSection() {
         >
           <motion.div
             className="bg-[white] p-6 rounded-md border border-[#000000] shadow-md"
-            whileHover={{ scale: 1.03 }}
-            transition={{
-              type: "spring",
-              stiffness: 500,
-              damping: 10,
-            }}
+            whileHover={{ scale: 1.05 }}
           >
             <div className="flex justify-between items-center mb-4 text-black">
               <p className="text-2xl font-bold">SWE Intern @ Company</p>

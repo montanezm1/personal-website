@@ -30,7 +30,7 @@ function RouteComponentMainPage() {
         >
           <h1 className="text-5xl font-extrabold mb-6 tracking-tight">
             Hi, I'm{" "}
-            <span className="text-[#a3747e]">
+            <span className="text-[#d18495]">
               <Typewriter
                 words={[
                   "Your Name",

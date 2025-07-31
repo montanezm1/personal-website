@@ -37,7 +37,7 @@ export default function ProjectsSection() {
       id="projects"
       className="bg-transparent min-h-screen py-12 px-4 sm:px-6 lg:px-8"
     >
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mx-auto mb-12 text-gray-900">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mx-auto mb-12 text-[#2d2d2d]">
         Personal Projects
       </h2>
       <div className="space-y-12 gap-8 max-w-4xl mx-auto">

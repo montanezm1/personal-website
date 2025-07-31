@@ -4,20 +4,12 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="bg-white text-[black] min-h-screen px-6 py-16"
+      className="bg-white text-[#2d2d2d] min-h-screen px-6 py-16"
     >
       <h2 className="text-5xl font-semibold text-center mb-12">About Me</h2>
       <div className="flex flex-col md:flex-row items-center gap-8 max-w-6xl mx-auto">
         {/* Bio box - padding to left*/}
-        <motion.div
-          className="bg-[#f5f1f1] p-6 md:p-8 rounded-xl border border-[#000000] max-w-xl text-left font-mono text-sm shadow-md ml-18"
-          whileHover={{ scale: 1.05 }}
-          transition={{
-            type: "spring",
-            stiffness: 500,
-            damping: 10,
-          }}
-        >
+        <motion.div className="bg-[#f5f1f1] p-6 md:p-8  max-w-xl text-left font-mono text-sm shadow-md ml-18">
           <p>
             I am Firstname Lastname, a student at (University). I am originally
             from (Hometown). Growing up there inspired me to pursue (Major)
@@ -32,12 +24,6 @@ export default function AboutSection() {
           src="/codeLogo.png"
           alt="profile"
           className="w-72 h-auto rounded-md shadow-md"
-          whileHover={{ scale: 1.05 }}
-          transition={{
-            type: "spring",
-            stiffness: 500,
-            damping: 10,
-          }}
         />
       </div>
 
@@ -79,50 +65,26 @@ export default function AboutSection() {
       </div>
 
       {/* Fun Facts */}
-      <h3 className="text-4xl italic font-semibold text-center mt-20 mb-12">
+      <h3 className="text-4xl font-semibold text-center mt-20 mb-12">
         Fun Facts
       </h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        <motion.div
-          className="bg-[#f5f1f1] p-6 rounded-xl border border-[#000000] shadow-md"
-          whileHover={{ scale: 1.05 }}
-          transition={{
-            type: "spring",
-            stiffness: 500,
-            damping: 10,
-          }}
-        >
+        <div className="bg-[#f5f1f1] p-6 rounded-xl  shadow-md">
           <div className="text-xl mb-2">I really enjoy...</div>
           <p className="font-mono text-sm">
             Hiking! It's one of the best ways to...
           </p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          transition={{
-            type: "spring",
-            stiffness: 500,
-            damping: 10,
-          }}
-          className="bg-[#f5f1f1] p-6 rounded-xl border border-[#000000] shadow-md"
-        >
+        <div className="bg-[#f5f1f1] p-6 rounded-xl shadow-md">
           <div className="text-xl mb-2">In my free time...</div>
           <p className="font-mono text-sm">I like to...</p>
-        </motion.div>
+        </div>
 
-        <motion.div
-          whileHover={{ scale: 1.05 }}
-          transition={{
-            type: "spring",
-            stiffness: 500,
-            damping: 10,
-          }}
-          className="bg-[#f5f1f1] p-6 rounded-xl border border-[#000000] shadow-md"
-        >
+        <div className="bg-[#f5f1f1] p-6 rounded-xl  shadow-md">
           <div className="text-xl mb-2">I love watching...</div>
           <p className="font-mono text-sm">This show is so...</p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
