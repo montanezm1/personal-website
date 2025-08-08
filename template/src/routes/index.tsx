@@ -23,6 +23,7 @@ function RouteComponentMainPage() {
       >
         <motion.div
           className="-translate-y-12"
+          /* appearance animation */
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 2 }}

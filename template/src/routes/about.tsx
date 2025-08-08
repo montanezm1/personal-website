@@ -45,6 +45,7 @@ export default function AboutSection() {
           { name: "Java", logo: "/icons/java.svg" },
         ].map((skill, index) => (
           <motion.div
+            /* spring animation */
             key={index}
             whileHover={{ scale: 1.05 }}
             transition={{

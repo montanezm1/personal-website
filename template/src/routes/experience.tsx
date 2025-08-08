@@ -11,6 +11,7 @@ export default function ExperienceSection() {
       <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto">
         {/* Experience Block 1 */}
         <motion.div
+          /* sliding animation */
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -45,6 +46,7 @@ export default function ExperienceSection() {
         </motion.div>
         {/* Experience Block 2 */}
         <motion.div
+          /* sliding animation */
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
@@ -80,6 +82,7 @@ export default function ExperienceSection() {
 
         {/* Experience Block 3 */}
         <motion.div
+          /* sliding animation */
           initial={{ x: -100, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}

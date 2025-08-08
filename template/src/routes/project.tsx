@@ -42,13 +42,15 @@ export default function ProjectsSection() {
       </h2>
       <div className="space-y-12 gap-8 max-w-4xl mx-auto">
         {projects.map((project, index) => {
-          //calculates odd number of projects to alternate
+          //maps through each project to display and calculated odd indices for alternate display
+
           const isOdd = index % 2 === 0;
 
           return (
             <motion.div
               key={project.id}
               className="flex flex-col md:flex-row bg-[#f9fafb] rounded-2xl shadow-sm overflow-hidden"
+              /* appearing animation */
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1 }}
@@ -67,7 +69,7 @@ export default function ProjectsSection() {
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover rounded-lg"
-                    /* transition for a bubbly hover, can use for other blocks for a more interactive user experience */
+                    /* transition for a bubbly hover */
                     whileHover={{ scale: 1.02 }}
                     transition={{
                       type: "spring",
