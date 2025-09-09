@@ -3,9 +3,9 @@ export default function ExperienceSection() {
   return (
     <section
       id="experience"
-      className="bg-[white] max-h-100vh py-16 mb-12 px-4 sm:px-6 lg:px-8"
+      className=" bg-[#f0f8ff] pt-10 pb-10 px-6"
     >
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mx-auto mb-12 text-[#2d2d2d]">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mx-auto mb-12 text-primary">
         My Experience
       </h2>
       <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto">
@@ -21,7 +21,7 @@ export default function ExperienceSection() {
           }}
         >
           <motion.div
-            className="bg-[white] p-6 rounded-md border border-[#000000] shadow-md "
+            className="bg-white p-6 rounded-lg shadow-lg border border-gray-200"
             whileHover={{ scale: 1.05 }}
           >
             <div className="flex justify-between items-center mb-4 text-black">
@@ -56,7 +56,7 @@ export default function ExperienceSection() {
           }}
         >
           <motion.div
-            className="bg-[white] p-6 rounded-md border border-[#000000] shadow-md"
+            className="bg-white p-6 rounded-lg shadow-lg border border-gray-200"
             whileHover={{ scale: 1.05 }}
           >
             <div className="flex justify-between items-center mb-4 text-black">
@@ -92,7 +92,7 @@ export default function ExperienceSection() {
           }}
         >
           <motion.div
-            className="bg-[white] p-6 rounded-md border border-[#000000] shadow-md"
+            className="bg-white p-6 rounded-lg shadow-lg border border-gray-200"
             whileHover={{ scale: 1.05 }}
           >
             <div className="flex justify-between items-center mb-4 text-black">

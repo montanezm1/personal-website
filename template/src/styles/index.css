@@ -2,8 +2,28 @@
 
 /* All of this is temporary and can be removed when doing tailwind
 
-Update: Removed by Arshiya
- */
+/* Define your theme colors */
+:root {
+  --color-primary: #0492c2;
+  --color-secondary: #c5c6c7;
+  --color-third: #ffffff
+  --color-text: #000000;
+  --color-text-secondary: #ffffff;
+  --color-text-third: #0492c2;
+}
+
+/* Map them to Tailwind utility classes */
+@layer utilities {
+  .bg-primary { background-color: var(--color-primary); }
+  .bg-secondary { background-color: var(--color-secondary); }
+  .bg-third { background-color: var(--color-third); }
+  .text-primary { color: var(--color-text); }
+  .text-secondary { color: var(--color-text-secondary); }
+  .text-third { color: var(--color-text-third)}
+  .text-text { color: var(--color-text); }
+  .hover\:text-secondary:hover { color: #63c5da; }
+}
+
 html {
     scroll-behavior: smooth;
     /* Important for correct mapping */

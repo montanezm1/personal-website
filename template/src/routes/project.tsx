@@ -35,9 +35,9 @@ export default function ProjectsSection() {
   return (
     <div
       id="projects"
-      className="bg-transparent min-h-screen py-12 px-4 sm:px-6 lg:px-8"
+      className="bg-[#f0f8ff] pt-10 pb-10 px-6"
     >
-      <h2 className="text-3xl sm:text-4xl font-bold text-center mx-auto mb-12 text-[#2d2d2d]">
+      <h2 className="text-3xl sm:text-4xl font-bold text-center mx-auto mb-12 text-primary">
         Personal Projects
       </h2>
       <div className="space-y-12 gap-8 max-w-4xl mx-auto">
@@ -49,7 +49,7 @@ export default function ProjectsSection() {
           return (
             <motion.div
               key={project.id}
-              className="flex flex-col md:flex-row bg-[#f9fafb] rounded-2xl shadow-sm overflow-hidden"
+              className="flex flex-col md:flex-row bg-[#ffffff] rounded-2xl shadow-sm overflow-hidden"
               /* appearing animation */
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}

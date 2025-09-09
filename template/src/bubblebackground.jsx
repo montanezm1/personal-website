@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const pastelPinks = ['#ffe0e9ff', '#e5b6bd', '#eed8e3', '#ffcfd6', '#f4e0ea'];
+const pastelColor = ['#cae9f5', '#f0f8ff', '#deebf7'];
 
 class Bubble {
   constructor(canvas, ctx) {
@@ -11,8 +11,8 @@ class Bubble {
     this.y = Math.random() * canvas.height;
     this.dx = (Math.random() - 0.5) * 4;
     this.dy = (Math.random() - 0.5) * 4;
-    this.colorStart = pastelPinks[Math.floor(Math.random() * pastelPinks.length)];
-    this.colorEnd = pastelPinks[Math.floor(Math.random() * pastelPinks.length)];
+    this.colorStart = pastelColor[Math.floor(Math.random() * pastelColor.length)];
+    this.colorEnd = pastelColor[Math.floor(Math.random() * pastelColor.length)];
   }
 
   draw() {
@@ -130,7 +130,7 @@ export default function BubbleBackground() {
   return (
     <canvas
       ref={canvasRef}
-      className="fixed top-0 left-0 w-full h-full -z-10 blur-xl"
+      className="absolute top-0 left-0 w-full h-full -z-10 blur-xl"
       style={{ pointerEvents: 'auto' }} // ensures mouse events register
     />
   );
